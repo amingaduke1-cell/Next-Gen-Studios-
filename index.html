@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>HospitalCare — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body id="page-home">
+
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">HospitalCare+</div>
+        <div class="tag">Compassion. Care. Trust.</div>
+      </div>
+
+    
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="pages/about.html" >About</a>
+        <a href="pages/services.html">Services</a>
+        <a href="pages/doctors.html">Doctors</a>
+        <a href="pages/appointments.html">Book</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/login.html" class="btn small">Sign in</a>
+      </nav>
+
+     
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </header>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileNav").classList.toggle("open");
+    }
+  </script>
+  
+
+  <main>
+    <section class="hero ">
+      <div class="container hero-inner">
+        <h1>Trusted clinical care — for your family and elders</h1>
+        <p class="lead">24/7 emergency. Home Health & Lifeline. Modern diagnostics. Compassionate clinicians.</p>
+        <div class="cta-row">
+          <a href="pages/appointments.html" class="btn primary">Book Appointment</a>
+          <a href="pages/contact.html" class="btn outline">Contact Us</a>
+        </div>
+        <div class="contacts small">
+          <span>Facebook: <a href="https://www.facebook.com/duekey.wrasta" target="_blank">duekey.wrasta</a></span>
+          <span>WhatsApp: <a href="https://wa.me/254718858575" target="_blank">0718858575</a></span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card hero-card">
+          <h3>Quick services</h3>
+          <ul>
+            <li>General Checkup</li>
+            <li>Home Visits</li>
+            <li>Lab & Imaging</li>
+            <li>Pharmacy</li>
+          </ul>
+          <a href="pages/services.html" class="btn small">Explore services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container features">
+      <h2>Our key services</h2>
+      <div class="grid-4">
+        <div class="service">
+          <h4>Emergency Care</h4>
+          <p>24/7 emergency response with dedicated teams and rapid triage.</p>
+        </div>
+        <div class="service">
+          <h4>Home Health</h4>
+          <p>Remote monitoring, scheduled home visits and Lifeline emergency response.</p>
+        </div>
+        <div class="service">
+          <h4>Outpatient Clinics</h4>
+          <p>Specialist consultations and follow-ups for chronic care.</p>
+        </div>
+        <div class="service">
+          <h4>Diagnostics</h4>
+          <p>Lab tests and imaging with fast turnaround and secure results.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container doctors-preview">
+      <h2>Our Doctors</h2>
+      <div class="grid-3">
+        <div class="doc-card">
+
+          <div class="avatar">DR</div>
+          <div>
+            <h4>Dr. Mary Otieno</h4>
+            <p>Cardiology • 18 yrs</p>
+          </div>
+        </div>
+
+        <div class="doc-card">
+          <div class="avatar">DR</div>
+          <div>
+            <h4>Dr. Daniel Mwangi</h4>
+            <p>Geriatrics • 12 yrs</p>
+          </div>
+        </div>
+
+        <div class="doc-card">
+          <div class="avatar">DR</div>
+          <div>
+            <h4>Dr. Aisha Noor</h4>
+            <p>General Medicine • 10 yrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <a href="pages/doctors.html" class="btn">Meet all doctors</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>HospitalCare+</strong>
+        <p>Compassionate care, modern medicine.</p>
+      </div>
+      <div>
+        <p>Contact</p>
+        <p>Facebook: <a href="https://www.facebook.com/duekey.wrasta" target="_blank">duekey.wrasta</a></p>
+        <p>WhatsApp: <a href="https://wa.me/254718858575" target="_blank">0718858575</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
