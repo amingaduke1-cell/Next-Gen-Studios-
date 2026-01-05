@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — HospitalCare+</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body id="page-dashboard">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><div class="logo">HospitalCare+</div></div>
+      <nav class="main-nav">
+        <a href="index.html">Public</a>
+        <a href="pages/dashboard.html" class="active">Dashboard</a>
+        <a href="login.html" id="logoutLink">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container dashboard">
+    <aside class="sidebar card">
+      <h3>Admin Menu</h3>
+      <ul>
+        <li><a href="#tab-overview" class="dash-tab active">Overview</a></li>
+        <li><a href="#tab-users" class="dash-tab">Users</a></li>
+        <li><a href="#tab-patients" class="dash-tab">Patients</a></li>
+        <li><a href="#tab-doctors" class="dash-tab">Doctors</a></li>
+        <li><a href="#tab-appointments" class="dash-tab">Appointments</a></li>
+      </ul>
+    </aside>
+
+    <section class="dash-main">
+      <div id="tab-overview" class="dash-pane active card">
+        <h2>Overview</h2>
+        <div class="grid-3 stats">
+          <div class="stat"><h3 id="statUsers">0</h3><p>Users</p></div>
+          <div class="stat"><h3 id="statPatients">0</h3><p>Patients</p></div>
+          <div class="stat"><h3 id="statAppointments">0</h3><p>Appointments</p></div>
+        </div>
+      </div>
+
+      <div id="tab-users" class="dash-pane card">
+        <h2>Users</h2>
+        <form id="userAddForm" class="inline-form">
+          <input id="u_name" placeholder="Name" required>
+          <input id="u_email" placeholder="Email" required>
+          <input id="u_pass" placeholder="Password" type="password" required>
+          <button type="submit" class="btn small">Add User</button>
+        </form>
+        <table class="data-table" id="usersTable">
+          <thead><tr><th>Name</th><th>Email</th><th>Actions</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div id="tab-patients" class="dash-pane card">
+        <h2>Patients</h2>
+        <form id="patientAddForm" class="inline-form">
+          <input id="pt_name" placeholder="Name" required>
+          <input id="pt_age" placeholder="Age" type="number" required>
+          <input id="pt_contact" placeholder="Contact">
+          <button type="submit" class="btn small">Add Patient</button>
+        </form>
+        <table class="data-table" id="patientsTable">
+          <thead><tr><th>Name</th><th>Age</th><th>Contact</th><th>Actions</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div id="tab-doctors" class="dash-pane card">
+        <h2>Doctors</h2>
+        <form id="doctorAddForm" class="inline-form">
+          <input id="doc_name" placeholder="Name" required>
+          <input id="doc_spec" placeholder="Specialty" required>
+          <button type="submit" class="btn small">Add Doctor</button>
+        </form>
+        <table class="data-table" id="doctorsTable">
+          <thead><tr><th>Name</th><th>Specialty</th><th>Actions</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div id="tab-appointments" class="dash-pane card">
+        <h2>Appointments</h2>
+        <table class="data-table" id="adminAppointmentsTable">
+          <thead><tr><th>Patient</th><th>Doctor</th><th>When</th><th>Actions</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>HospitalCare+</strong>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Login — HospitalCare+</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body id="page-login">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">HospitalCare+</div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="signup.html">Sign up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-container">
+    <div class="auth-card">
+      <h1>Welcome Back</h1>
+      <p class="sub-text">Sign in to continue to your dashboard</p>
+      <form id="loginForm">
+        <label>password</label>
+        <input type="password" class="neu-input" id="password" placeholder="Enter password" required>
+        <div class="error-msg" id="errorMsg"></div>
+        <button type="submit" class="neu-button">Sign in</button>
+      </form>
+      <p class="other-link">
+        Don't have an account? <a href="signup.html">Create one</a>
+      </p>
+
+    </div>
+  </main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

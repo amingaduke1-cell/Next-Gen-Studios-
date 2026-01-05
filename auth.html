@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="auth-container">
+
+    <div class="tabs">
+        <button class="tab active" onclick="showForm('login')">Login</button>
+        <button class="tab" onclick="showForm('signup')">Sign Up</button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form id="login" class="form active">
+        <h2>Welcome Back</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="submit-btn">Login</button>
+    </form>
+
+    <!-- SIGNUP FORM -->
+    <form id="signup" class="form">
+        <h2>Create an Account</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="submit-btn">Sign Up</button>
+    </form>
+
+</div>
+
+<script>
+function showForm(name){
+    document.querySelectorAll(".form").forEach(f => f.classList.remove("active"));
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+
+    document.getElementById(name).classList.add("active");
+    event.target.classList.add("active");
+}
+</script>
+
+</body>
+</html>
